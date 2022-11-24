@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT P2P MARKET PLACE</title>
     <link href="styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/952046387d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-bar">
                 <div class="logo">
-                    <img src="./images/logo.png" alt="logo image" class="logo-image" />
-                    <p>PLASMA SWAP</p>
-                    
+                    <img src="./images/logo 2.png" alt="logo image" class="logo-image" />
                 </div>
 
                 <div class="nav-menu">
@@ -66,7 +65,7 @@
                 <img src="./images/splitopen.png" alt="splitopen img" />
                 <h5>Splitopen</h5>
                 <p> You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
-                <div class="creator">
+                <div class="creator" id="creator1">
                     <img src="./images/Ellipse.png" alt="png image" />
                     <div class="dunne">
                         <h5>@Dune</h5>
@@ -141,7 +140,7 @@
                 <img src="./images/spacecraft.png" />
                 <h5>Spacecraft</h5>
                 <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
-                <div class="creator">
+                <div class="creator" id="creator6">
                     <img src="./images/Ellipse.png" alt="png image" />
                     <div class="dunne">
                         <h5>@Rick</h5>
@@ -171,7 +170,7 @@
                 <img src="./images/astronaut.png" />
                 <h5>Astronaut</h5>
                 <p> You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
-                <div class="creator">
+                <div class="creator" id="creator8">
                     <img src="./images/Ellipse.png" alt="png image" />
                     <div class="dunne">
                         <h5>@Bigfoot</h5>
@@ -183,7 +182,9 @@
             </div>
             </div> 
             <div class="pages">
-                <i class='fas fa-angle-left'></i> <span>page1 2 3 4</span><i class='fas fa-angle-right'></i>
+                <i class="fa fa-chevron-left" aria-hidden="true"></i> 
+                <span><a href="#"> Page1</a>
+                <span>2</span> <span>3</span> <span>4</span> <i class="fa fa-chevron-right" aria-hidden="true"></i>
             </div>
            
         </div>
@@ -192,7 +193,7 @@
     <section>
         <div class="section-3">
             <div class="frame-2">
-                <img src="./images/Frame 3.png" alt="png image"/>
+                <img src="./images/Frame 3.png" alt="png image" class="frame-2"/>
             </div>
             <div class="choose-us">
                 <h2>How it works</h2>
@@ -218,122 +219,150 @@
             </div>
        
 
-        <div class="users">
+        <div class="appraisal">
+            <div class="testify">
             <div class="testimonials">
                 <img src="./images/ghostrider.png"/>
                 <div class="profile">
                     <h3>Ghostrider</h3>
                     <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                    <div class="fix">
+                        <img src="./images/Ellipse.png" alt="png image" />
                     <div class="dunne">
                         <h5>@Maggie</h5>
                         <p>creator</p>
-                    </div>       
+                    </div>  
+                    </div>        
                  </div>
             </div>
 
             <div class="network">
                 <img src="./images/Fill 1.png" />
-                <p>0xag5...pls</p>
+                <p>0xag5...pls |</p>
                 <img src="./images/Icon - ETH.png" />
-                <p>0.00 ETH</p>
-                <p>Total NFTs = 1</p>
+                <p>0.00 ETH |</p>
+                <p>Total NFTs = 1 |</p>
                 <img src="./images/carbon_time.png" alt="clock icon" />
                 <p>20hrs : 15min : 25sec</p>
             </div>
         </div>
-        
-        <div class="swap logo">
-            <img src="./images/logo.png" alt="logo" />
-        </div>
 
-        <div class="users">
+            <div class="swap-logo">
+            <img src="./images/logo.png" alt="logo" />
+            </div>
+        
+            <div class="testify">
             <div class="testimonials">
                 <img src="./images/LOIS.png" />
                 <div class="profile">
                     <h3>Ghostrider</h3>
                     <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                    <div class="fix">
+                        <img src="./images/Ellipse.png" alt="png image" />
                     <div class="dunne">
                         <h5>@Lois</h5>
                         <p>creator</p>
-                    </div>       
+                    </div>  
+                    </div>     
                  </div>
             </div>
 
             <div class="network">
                 <img src="./images/Fill 1.png" />
-                <p>0xag7...swp</p>
+                <p>0xag7...swp |</p>
                 <img src="./images/Icon - ETH.png" />
-                <p>0.00 ETH</p>
-                <p>Total NFTs = 1</p>
+                <p>0.00 ETH |</p>
+                <p>Total NFTs = 1 |</p>
                 <img src="./images/carbon_time.png" alt="clock icon" />
                 <p>20hrs : 15min : 25sec</p>
             </div>
         </div>
-
-        <div class="swap board">
-            <p>Swap Date: <br/> <b>Tue Nov 15, 2022.</b></p>
-            <p>Txn Hash: <br/> <b>0x2a77ac1b96215aa2gee4506110291454b4dgh4789cdfb701tg89i05745tr75ui</b></p>
         </div>
 
-        <div class="users">
+        <div class="swap-board">
+            <div class="block">
+                <p>Swap Date:</p>
+                <b>Tue Nov 15, 2022.</b> </div>
+                <div class="block" id="blocks">
+                <p>Txn Hash: </p> 
+                <b>0x2a77ac1b96215aa2gee4506110291454b4dgh4789cdfb701tg89i05745tr75ui</b></div>
+        </div>
+
+        <div class="appraisal">
+            <div class="testify">
             <div class="testimonials">
                 <img src="./images/simpson.png" alt="simpson img"/>
                 <div class="profile">
                     <h3>Simpson</h3>
                     <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                    <div class="fix">
+                        <img src="./images/Ellipse.png" alt="png image" />
                     <div class="dunne">
                         <h5>@Sandman</h5>
                         <p>creator</p>
+                    </div>  
                     </div>       
                  </div>
             </div>
 
             <div class="network">
                 <img src="./images/Fill 1.png" />
-                <p>0xag5...pls</p>
+                <p>0xag5...pls |</p>
                 <img src="./images/Icon - ETH.png" />
-                <p>0.00 ETH</p>
-                <p>Total NFTs = 1</p>
+                <p>0.00 ETH |</p>
+                <p>Total NFTs = 1 |
+                </p>
                 <img src="./images/carbon_time.png" alt="clock icon" />
                 <p>20hrs : 15min : 25sec</p>
             </div>
-        </div>
+            </div>
         
-        <div class="swap logo">
+    
+            <div class="swap-logo">
             <img src="./images/logo.png" alt="logo" />
-        </div>
+            </div>
 
-        <div class="users">
+            <div class="testify">
             <div class="testimonials">
                 <img src="./images/groot.png"/>
                 <div class="profile">
                     <h3>Groot</h3>
                     <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                    <div class="fix">
+                        <img src="./images/Ellipse.png" alt="png image" />
                     <div class="dunne">
                         <h5>@Dune</h5>
                         <p>creator</p>
-                    </div>       
+                    </div>  
+                    </div>          
                  </div>
             </div>
 
             <div class="network">
                 <img src="./images/Fill 1.png" />
-                <p>0xag7...swp</p>
+                <p>0xag7...swp |</p>
                 <img src="./images/Icon - ETH.png" />
-                <p>0.00 ETH</p>
-                <p>Total NFTs = 1</p>
+                <p>0.00 ETH |</p>
+                <p>Total NFTs = 1 |</p>
                 <img src="./images/carbon_time.png" alt="clock icon" />
                 <p>20hrs : 15min : 25sec</p>
             </div>
         </div>
-
-        <div class="swap board">
-            <p>Swap Date: <br/> <b>Tue Nov 15, 2022.</b></p>
-            <p>Txn Hash: <br/> <b>0x2a77ac1b96215aa2gee4506110291454b4dgh4789cdfb701tg89i05745tr75ui</b></p>
         </div>
 
-        <div class="pages">
-            <i class='fas fa-angle-left'></i> <span>page1 2 3 4</span><i class='fas fa-angle-right'></i>
+        <div class="swap-board">
+            <div class="block">
+            <p>Swap Date:</p>
+            <b>Tue Nov 15, 2022.</b> </div>
+            <div class="block" id="blocks">
+            <p>Txn Hash: </p> 
+            <b>0x2a77ac1b96215aa2gee4506110291454b4dgh4789cdfb701tg89i05745tr75ui</b></div>
+        </div>
+
+        <div class="pages" id="pages2">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i> 
+            <span><a href="#"> Page1</a>
+            <span>2</span> <span>3</span> <span>4</span> <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
         </div>
     </section>
@@ -350,21 +379,20 @@
                 <h3>Join the Community</h3>
                 <p>By subscribing to our email list, you may be the first to learn about our newest updates, features, swappable NFTs, and helpful hints for using Plasma swap.</p>
                 <div class="icons">
-                    <img src="./images/twitter icon.png" alt="twitter icon" />
-                    <img src="./images/IG Icon.png" alt="instagram icon" />
-                    <img src="./images/telegram icon.png" alt="telegram icon" />
-                    <img src="./images/discord icon.png" alt="discord icon" />
-                    <img src="./images/email icon.png" alt="slack icon" />
-                    <img src="./images/youtube icon.png" alt="youtube icon" />
+                    <a href="#"><img src="./images/twitter icon.png" alt="twitter icon" /></a>
+                    <a href="#"><img src="./images/IG Icon.png" alt="instagram icon" /></a>
+                    <a href="#"><img src="./images/telegram icon.png" alt="telegram icon" /></a>
+                    <a href="#"><img src="./images/discord icon.png" alt="discord icon" /></a>
+                    <a href="#"><img src="./images/email icon.png" alt="slack icon" /></a>
+                    <a href="#"><img src="./images/youtube icon.png" alt="youtube icon" /></a>
                 </div>
             </div>
-            <hr />
-
+        </div>
+        <hr />
             <div class="overview">
                 <div class="plasma-footer">
                     <div class="footer-logo">
-                    <img src="./images/logo.png" alt="plasma logo" />
-                    <h3>PLASMA SWAP</h3>
+                    <img src="./images/logo 2.png" alt="plasma logo" />
                     </div>
                     <p>An online digital platform for peer to peer swap of Non-Fungible Tokens (NFTs)
                         Discover exclusive digital items and make that swap.</p>
@@ -373,47 +401,47 @@
                 <div class="know-us">
                     <ul class="plasmas">
                         <li class="bold-heading">Company</li>
-                        <li>About us</li>
-                        <li>Support</li>
-                        <li>Feedback</li>
-                        <li>Grants</li>
-                        <li>FAQ</li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Grants</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
 
                     <ul class="plasmas">
                         <li class="bold-heading">Market place</li>
-                        <li>All NFTs</li>
-                        <li>Art</li>
-                        <li>Music</li>
-                        <li>Photography</li>
-                        <li>Sports</li>
+                        <li><a href="#">All NFTs</a></li>
+                        <li><a href="#">Art</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Photography</a></li>
+                        <li><a href="#">Sports</a></li>
                     </ul>
 
                     
                     <ul class="plasmas">
                         <li class="bold-heading">Initiatives</li>
-                        <li>Resources</li>
-                        <li>Newsletters</li>
-                        <li>Community</li>
-                        <li>Advocate program</li>
-                        <li>Blog</li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Newsletters</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Advocate program</a></li>
+                        <li><a href="#">Blog</a></li>
                     </ul>
 
                     
                     <ul class="plasmas">
                         <li class="bold-heading">Community</li>
-                        <li>Profile</li>
-                        <li>Favorites</li>
-                        <li>Swaps</li>
-                        <li>Ranking</li>
-                        <li>Activity</li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Favorites</a></li>
+                        <li><a href="#">Swaps</a></li>
+                        <li><a href="#">Ranking</a></li>
+                        <li><a href="#">Activity</a></li>
                     </ul>
                 </div>
             </div>
             <hr />
 
             <p class="footer-p">2022 Plasma swap</p>
-        </div>
+        
     </footer>
 
     <script src="script.js"></script>
