@@ -408,3 +408,71 @@ hr{
     color: var(--text-color);
     padding-top: 1rem;
 }
+
+/*pop up 1 */
+#popup{
+    width: 400px;
+    background-color: var(--card-color);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+}
+#popup:active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
+    
+}
+.times{
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
+}
+.popup-logo{
+    width: 200px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.connect>h3, p{
+    color: var(--text-color);
+    text-align: center;
+    line-height: 2rem;
+}
+.connect-logo{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 30px 50px;
+}
+.connect-logo>img{
+    width: 70px;
+}
+
+body.active-popup{
+    overflow: hidden;
+    
+}
+body.active-popup #blur{
+     filter: blur(5px);
+     transition: filter 1s ease-in 0ms;
+}
+body.active-popup #popup{
+    top: 50%;
+    opacity: 1;
+}
