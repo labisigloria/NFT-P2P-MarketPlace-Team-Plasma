@@ -1,6 +1,9 @@
+const container = document.querySelector(".container")
+const popup = document.querySelector(".popup")
+
+
 function toggle() {
-    let blur = document.getElementById('blur');
-    blur.classList.toggle('active');
-    let popup = document.getElementById('popup');
-    popup.classList.toggle('active');
+    container.classList.toggle("container-active")
+    popup.classList.toggle("popup-active")
 }
+ 
