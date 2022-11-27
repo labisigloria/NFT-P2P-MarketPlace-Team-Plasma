@@ -8,7 +8,8 @@
     <link href="styles.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/952046387d.js" crossorigin="anonymous"></script>
 </head>
-<body id="blur">
+<body>
+    <div class="container">
     <header>
         <nav>
             <div class="nav-bar">
@@ -19,7 +20,7 @@
                 <div class="nav-menu">
                     <ul class="nav-list">
                         <li class="nav-item1"><a href="#">How it works</a></li>
-                        <li class="nav-item2"><button>Connect Wallet</button></li>
+                        <li class="nav-item2" onclick="toggle()"><button>Connect Wallet</button></li>
                     </ul>
                 </div>
             </div>
@@ -37,21 +38,8 @@
                 Utilize our digital platform to quickly and easily swap your NFTs without the use of a central third party.
             </p>
             <p>Step into a world of digitalization, transparency and immutability.</p>
-            <button class="main-button">Get Started</button></a>
+            <button class="popup-btn" onclick="toggle()">Get Started</button>
         </div>
-
-        <div id="popup">
-            <i class="fa fa-times-circle-o" aria-hidden="true" class="times"></i>
-            <img src="./images/logo 2.png" alt="plasma logo" class="popup-logo" />
-            <div class="connect">
-                <h3>Connect your wallet</h3>
-                <p>Select your most preferred wallet to continue</p>
-                <div class="connect-logo">
-                <img src="./images/metamask.png" alt="metamask logo" />
-                <img src="./images/coinbase.png" alt="coinbase logo" /></div>
-            </div>
-        </div>
-
     </main>
 
     <section>
@@ -457,7 +445,94 @@
         
     </footer>
 
-    <script src="script.js"></script>
     
+    <div class="popup">
+        <button class="close-btn" onclick="toggle()">&times;</button>
+        <img src="./images/logo 2.png" alt="plasma logo" class="popup-logo" />
+        <div class="connect">
+            <h3>Connect your wallet</h3>
+            <p>Select your most preferred wallet to continue</p>
+            <div class="connect-logo">
+            <img src="./images/metamask.png" alt="metamask logo"/>
+            <img src="./images/coinbase.png" alt="coinbase logo"/></div>
+        </div>
+    </div>
+</div> 
+<script src="script.js" type="text/javascript"></script>
 </body>
+<script src="script.js" type="text/javascript"></script>
 </html>
+
+
+<!--
+    <div class="popup-model">
+        <button class="close-btn" onclick="toggle()">&times;</button>
+        <img src="./images/logo 2.png" alt="plasma logo" class="popup-logo" />
+        <div class="con-p">
+            <h3>Connect your wallet</h3>
+            <p>Skip approving every interaction with your wallet by allowing Plasma swap remember you.</p>
+            <div class="form">
+            <input type="email" name="email" class="email" />
+            <button class="check-btn" onclick="connect()">Check Wallet</button></div>
+        <p>Signing keys can only sign messages and cannot hold funds. They are stored securely in the browser database system.</p>
+        </div>
+    </div>-->
+
+    <!--
+        .popup-model {
+    max-width: 420px;
+    width: 70%;
+    background-color:var(--card-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+    position: absolute ;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    visibility:collapse ;
+    padding: 2rem;
+  
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.email{
+    padding: 12px 90px;
+    margin: 20px;
+    border: 1px solid #DAD6FF;
+    border-radius: 8px;
+}
+.check-btn{
+    padding: 12px 8rem;
+    background-image: var(--btn-color);
+    color: var(--text-color);
+    font-size: 16px;
+    border: 1px;
+    border-image: var(--btn-color);
+    border-radius: 8px;
+}
+.con-p{
+    text-align: center;
+}
+.con-p>h3{
+    color: var(--text-color);
+    margin-top: 5px;
+    font-size: 20px;
+}
+.con-p>p{
+    font-size: 14px;
+    line-height: 1.4rem;
+    padding-top: 1rem;
+    color: var(--grey);
+    padding: 20px;
+}
+    -->
