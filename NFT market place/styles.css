@@ -86,6 +86,7 @@ main{
     position:absolute ;
     left: 1;
     top: 3;
+    background-image: url(./images/stars.png);
     
 }
 .nft-swap>.left{
@@ -98,6 +99,7 @@ main{
     position: absolute;
     right: 0;
     top: 1;
+    background-image: url(./images/star2.png);
     
 }
 .start{
@@ -131,22 +133,28 @@ main{
     align-items: center;
     background-color: var(--bg-color2);
     padding: 3rem;
+    background-image: url(./images/star2.png);
+    
 }
 .frame-2{
     width: 250px;
     opacity: 0.5;
 }
 .choose-us{
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 5rem 10rem;
     width: 800px;
     color: var(--text-color);
     line-height: 1.8rem;
+    
 }
 .choose-us>h2{
     font-size: 35px;
     margin-bottom: 10px;
+}
+.choose-us>p{
+    text-align: left;
 }
 .section-2{
     background-color: var(--bg-color1);
@@ -184,6 +192,9 @@ main{
     line-height: 1.8rem;
     padding-bottom: 5px;
 }
+.users>p{
+    text-align: left;
+}
 .creator{
     display: flex;
     justify-content: space-between;
@@ -195,7 +206,7 @@ main{
     color: var(--grey);
 }
 .users-button{
-    margin-top: 25px;
+    margin-top: 10px;
     background-image:linear-gradient(180deg, #DAD6FF 0%, #3A2AFC 100%);
     color: var(--text-color);
     padding: 10px 15px;
@@ -279,6 +290,7 @@ span>a{
     line-height: 1.4rem;
     padding-top: 10px;
     margin-bottom: 5px;
+    text-align: left;
 }
 .fix{
     display: flex;
@@ -355,6 +367,7 @@ footer{
 .plasma-footer>p{
     color: var(--text-color);
     line-height: 1.8rem;
+    text-align: left;
 }
 .subscribe>input{
     padding: 8px 6rem;
@@ -375,12 +388,14 @@ footer{
     padding-right: 5rem;
     padding-bottom: 2rem;
     padding-top: 1rem;
+    text-align: left;
 }
 .community>p{
     line-height: 1.4rem;
     padding-right: 5rem;
     padding-bottom: 2rem;
     padding-top: 1rem;
+    text-align: left;
 }
 .community{
     padding-left: 6rem;
