@@ -41,8 +41,7 @@ contract NFTMarketPlace is ERC721URIStorage {
 		listPrice = _listPrice;
 	}
 
-
-	// Get Helper Functions for retrieving data from Smart Contract
+	// Get Helper Functions 
 
 	function getListPriceForNft() public view returns (uint256) {
 		return listPrice;
@@ -54,7 +53,6 @@ contract NFTMarketPlace is ERC721URIStorage {
         uint itemCount = 0;
         uint currentIndex = 0;
         
-        //Important to get a count of all the NFTs that belong to the user before we can make an array for them
         for(uint i=0; i < totalItemCount; i++)
         {
             if(idToListedTokenMetaData[i+1].owner == msg.sender || idToListedTokenMetaData[i+1].seller == msg.sender){
@@ -62,7 +60,6 @@ contract NFTMarketPlace is ERC721URIStorage {
             }
         }
 
-        //Once you have the count of relevant NFTs, create an array then store all the NFTs in it
         listedTokenMetaData[] memory items = new listedTokenMetaData[](itemCount);
         for(uint i=0; i < totalItemCount; i++) {
             if(idToListedTokenMetaData[i+1].owner == msg.sender || idToListedTokenMetaData[i+1].seller == msg.sender) {
@@ -75,8 +72,6 @@ contract NFTMarketPlace is ERC721URIStorage {
         return items;
     }
 
-
-	
 
 	function getAllNFTs() public view returns (listedTokenMetaData[] memory) {
 		uint256 count = _tokenIds.current();
@@ -96,7 +91,7 @@ contract NFTMarketPlace is ERC721URIStorage {
 		return tokens;
 	}
 
-	// storage: permanent storage, costly   memory: temporary storage and less costly 
+	// NB: storage: permanent storage, costly   memory: temporary storage and less costly 
 	function getLatestTokenMetadata() public view returns (listedTokenMetaData memory) {
 		uint256 latestTokenId = _tokenIds.current();
 		return idToListedTokenMetaData[latestTokenId];
@@ -110,9 +105,7 @@ contract NFTMarketPlace is ERC721URIStorage {
 		return _tokenIds.current();
 	}
 
-	// Functions: createToken, createListedToken, getAllNFTs, getMyNFTs, executeSale
-	// Already Implemented fxns in ERC721 implementation: _safeMint( )
-	// tokenURI: string
+	// Functions: createToken, createListedToken, getAllNFTs, getMyNFTs, executeSale	
 	function createToken(string memory tokenURI, uint256 _price) public payable returns (uint256){
 		require(msg.value == listPrice, "Not enough ether to create Token");
 		require(_price > 0, "Not enough ether to create Token");
@@ -122,14 +115,11 @@ contract NFTMarketPlace is ERC721URIStorage {
 		_safeMint(msg.sender, _latestTokenId);
 		_setTokenURI(_latestTokenId, tokenURI);
 
-
 		setToListedToken(_latestTokenId, _price);
 
 		return _latestTokenId;
 	}
 
-	// Creates struct for listed token and updates listed token mapping
-	// Also transfer of ownership to smart contract
 	function setToListedToken(uint256 _latestTokenId, uint256 _price) private {
 		idToListedTokenMetaData[_latestTokenId] = listedTokenMetaData(
 			payable(address(this)),
@@ -149,9 +139,6 @@ contract NFTMarketPlace is ERC721URIStorage {
         );
 	}
 
-	
-
-	
 
 	function SellNft(uint256 tokenId) public payable {
 		uint256 price = idToListedTokenMetaData[tokenId].price;
@@ -160,7 +147,6 @@ contract NFTMarketPlace is ERC721URIStorage {
 		idToListedTokenMetaData[tokenId]._currentlyListed = true;
         idToListedTokenMetaData[tokenId].seller = payable(msg.sender);
         _itemsSold.increment();
-
 
 		_transfer(address(this), msg.sender, tokenId);
 		approve(address(this), tokenId);
