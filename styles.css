@@ -348,6 +348,9 @@ span>a{
 #blocks{
     padding-left: 20px;
 }
+.query{
+    visibility:collapse;
+}
 #pages2{
     padding-top: 6rem;
     padding-bottom: 3rem;
@@ -901,5 +904,10 @@ hr{
         font-size: 12px;
         justify-content: center;
     }
-    
+    #blocks>b{
+        visibility: collapse;
+    }
+    #blocks>.query{
+        visibility: visible;
+    }
 }
