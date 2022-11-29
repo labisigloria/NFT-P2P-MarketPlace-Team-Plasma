@@ -806,7 +806,7 @@ hr{
     }
     
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:600px) {
     .logo{
         padding-left: 0px;
         width:20px ; 
