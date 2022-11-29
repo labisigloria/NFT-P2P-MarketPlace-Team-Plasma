@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
 :root{
     --nav-color: rgb(9, 11, 31);
     --btn-color:linear-gradient(180deg, #DAD6FF 0%, #3A2AFC 100%);
@@ -16,7 +19,7 @@
     padding: 0;
 }
 body{
-    font-family: inherit;
+    font-family: 'Open Sans', sans-serif;
     
 }
 i{
@@ -78,7 +81,6 @@ main{
 
 .nft-swap>.right{
     color: var(--text-color);
-    Font-family: Sans;
     Font-style: Bold; 
     Font-size: 3rem;
     padding-left: 20rem;
@@ -91,7 +93,6 @@ main{
 }
 .nft-swap>.left{
     color: var(--text-color);
-    Font-family: Sans;
     Font-style: Bold; 
     Font-size: 3rem;
     padding-right: 20rem;
@@ -134,7 +135,7 @@ main{
     background-color: var(--bg-color2);
     padding: 3rem;
     background-image: url(./images/star2.png);
-    
+    font-weight: 300;
 }
 .frame-2{
     width: 250px;
@@ -183,6 +184,7 @@ main{
     margin: 10px;
     border-radius: 8px;
     padding: 15px;
+    font-weight: 200;
     
 }
 .users>h5{
@@ -205,6 +207,7 @@ main{
     margin-right:3rem;
     color: var(--grey);
 }
+
 .users-button{
     margin-top: 10px;
     background-image:linear-gradient(180deg, #DAD6FF 0%, #3A2AFC 100%);
@@ -237,7 +240,7 @@ span>a{
     color: var(--grey);
 }
 #creator1, #creator6, #creator8{
-    padding-top: 40px;
+    padding-top: px;
 
 }
 .section-3{ 
@@ -458,7 +461,7 @@ hr{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    visibility:visible;
+    visibility:collapse;
   
 }
 
@@ -720,4 +723,155 @@ hr{
 .spacecraft{
     width: 160px;
     height: 160px;
+}
+
+/*media query*/
+@media screen and (max-width:780px) {
+    .nft-swap>.right{
+        padding-left: 5rem;
+        
+    }
+    .nft-swap>.left{
+        padding-right: 8rem;
+    }
+    
+    .choose-us{
+        width: 800px;
+        padding: 1rem;
+    }
+    .profile{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .testimonials{
+    flex-direction: column;
+    }
+    .network{
+        flex-wrap: wrap;
+        font-size: 14px;
+        
+    }
+    .testimonials>img{
+        width: 250px;
+    }
+    .swap-board{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+    #blocks{
+        padding-left: 0px;
+
+    }
+    .block>b{
+        font-size: 14px;
+        
+    }
+    .sub-btn{
+        margin-top: 10px;
+    }
+    .subscribe>input{
+        padding: 8px 2rem;
+    }
+    .overview{
+        flex-direction: column;
+        padding-top: 0rem;
+    }
+    .plasmas>li>a{
+        font-size: 10px;
+        
+    }
+    
+}
+@media screen and (max-width:375px) {
+    .logo{
+        padding-left: 0px;
+        width:20px ; 
+    }
+    .nav-list{
+        padding-right: 0px;
+        
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-item1{
+        padding-right: 30px;
+    }
+    .nft-swap>.right{
+        padding-left: 3rem;
+        padding-top: 1rem;
+        
+    }
+    .nft-swap>.left{
+        padding-right: 3rem;
+        padding-top: 20rem;
+    }
+    main{
+        background-size: 350px;
+        background-position: top center;
+        padding-top: 1rem;
+        background-position-y: 5rem;
+        
+    }
+    .start>img{
+        width: 250px;
+    }
+    .start{
+        padding-top: 30rem;
+    }
+    .start>p{
+        line-height: 25px;
+    }
+    .section-1{
+        flex-direction: column;
+        height: 500px;
+    }
+    .choose-us{
+        width: 200px;
+        padding:0rem;
+        position: absolute;
+        
+    }
+    .section-3{
+        height: 600px;
+        padding: 0rem;
+        
+    }
+    .frame-2{
+        margin-left: 1rem;
+    }
+    .appraisal{
+        flex-wrap: wrap;
+    }
+    .block>b{
+        width: 300px;
+    }
+    .channel{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+    }
+    .community{
+        padding: 0rem;
+        padding-top: 1rem;
+    }
+    .community>p{
+        padding: 1rem 0rem;
+    }
+    .subscribe{
+        padding-left: 2rem;
+    }
+    .plasma-footer{
+        width: 300px;
+    }
+    .know-us{
+        flex-wrap: wrap;
+    }
+    .plasmas>li>a{
+        font-size: 14px;
+    }
 }
