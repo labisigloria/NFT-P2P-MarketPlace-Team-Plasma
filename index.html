@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT P2P MARKET PLACE</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/952046387d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="./images/logo 2.png" alt="logo image" class="logo-image" />
+                </div>
+
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item1"><a href="#">How it works</a></li>
+                        <li class="nav-item2" onclick="toggle()"><button>Connect Wallet</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="nft-swap">
+            <h1 class="right">NFT<br /> SWAP</h1>
+            <h1 class="left">Made<br /> Easy</h1>
+        </div>
+        <div class="start">
+            <img src="./images/Vector 31.svg" alt="svg image" />
+            <p>
+                Utilize our digital platform to quickly and easily swap your NFTs without the use of a central third party.
+            </p>
+            <p>Step into a world of digitalization, transparency and immutability.</p>
+            <button class="popup-btn" onclick="toggle()">Get Started</button>
+        </div>
+    </main>
+
+    <section>
+        <div class="section-1">
+            <img src="./images/Frame 2.png" alt="png image" class="frame-2"/>
+            <div class="choose-us">
+                <h2>why choose us?</h2>
+                <p>Plasma swap is a decentralized platform that allows for NFT transactions</p><br />
+                <p> Take control of your NFTs and enjoy worry-free, secure exchanges. Explore various NFTs, offer an exchange, and meet a community of like-minded people.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-2">
+            <div class="center">
+            <h3>Explore NFTs Available for Swap</h3>
+            <p>The best site to swap your NFTs</p>
+            <img src="./images/Filter.png" alt="png image" />
+            </div>
+
+        <div class="cards">
+            <div class="users">
+                <img src="./images/splitopen.png" alt="splitopen img" />
+                <h5>Splitopen</h5>
+                <p> You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                <div class="creator" id="creator1">
+                    <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Dune</h5>
+                        <p>creator</p>
+                    </div>
+                    <span>22hrs:15min:25sec</span>
+                </div>
+                <button class="users-button">Make a Swap</button>
+            </div>
+
+            <div class="users">
+                <img src="./images/Kung fu.png" alt="kungfu img" />
+                <h5>Kungfu</h5>
+                <p>Making every stride a lovely one while defending oneself. When you perceive a threat, you apply master Shifu’s teachings.</p>
+                <div class="creator">
+                    <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Maggie</h5>
+                        <p>creator</p>
+                    </div>
+                    <span>20hrs:15min:25sec</span>
+                </div>
+                <button class="users-button">Make a Swap</button>
+            </div>
+
+            <div class="users">
+                <img src="./images/spaceimpact.png" />
+                <h5>Spaceimpact</h5>
+                <p>The universe is wide, encounter space within the metaverse. Take a deep dive into what exists in the alternate universe.</p>
+                <div class="creator">
+                    <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Lois</h5>
+                        <p>creator</p>
+                    </div>
+                    <span>21hrs:15min:20sec</span>
+                </div>
+                <button class="users-button">Make a Swap</button>
+            </div>
+
+            <div class="users">
+                <img src="./images/cyber.png" alt="cyber img" />
+                <h5>Cyberfunk</h5>
+                <p>Open your mind to the future, see what the sounds produced does to you. Learn your taste and adapt to the pace.</p>
+                <div class="creator">
+                    <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Sandman</h5>
+                        <p>creator</p>
+                    </div>
+                    <span>48hrs:15min:25sec</span>
+                </div>
+                <button class="users-button">Make a Swap</button>
+            </div>
+
+            <div class="users">
+                <img src="./images/detached.png" alt="detached image" />
+                <h5>Detached</h5>
+                <p>Making every stride a lovely one while defending oneself. When you perceive a threat, you apply master Shifu’s teachings.</p>
+                <div class="creator">
+                    <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Morty</h5>
+                        <p>creator</p>
+                    </div>
+                    <span>20hrs:15min:25sec</span>
+                </div>
+                <button class="users-button">Make a Swap</button>
+            </div>
+
+            <div class="users">
+                <img src="./images/spacecraft.png" />
+                <h5>Spacecraft</h5>
+                <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                <div class="creator" id="creator6">
+                    <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Rick</h5>
+                        <p>creator</p>
+                    </div>
+                    <span>22hrs:15min:25sec</span>
+                </div>
+                <button class="users-button">Make a Swap</button>
+            </div>
+
+            <div class="users">
+                <img src="./images/sipping.png" />
+                <h5>Sipping</h5>
+                <p> The universe is wide, encounter space within the metaverse. Take a deep dive into what exists in the alternate universe.</p>
+                <div class="creator">
+                    <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Mage</h5>
+                        <p>creator</p>
+                    </div>
+                    <span>21hrs:15min:20sec</span>
+                </div>
+                <button class="users-button">Make a Swap</button>
+            </div>
+
+            <div class="users">
+                <img src="./images/astronaut.png" />
+                <h5>Astronaut</h5>
+                <p> You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                <div class="creator" id="creator8">
+                    <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Bigfoot</h5>
+                        <p>creator</p>
+                    </div>
+                    <span>48hrs:15min:25sec</span>
+                </div>
+                <button class="users-button">Make a Swap</button>
+            </div>
+            </div> 
+            <div class="pages">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i> 
+                <span><a href="#"> Page1</a>
+                <span>2</span> <span>3</span> <span>4</span> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+           
+        </div>
+    </section>
+
+    <section>
+        <div class="section-3">
+            <div class="frame-2">
+                <img src="./images/Frame 3.png" alt="png image" class="frame-2"/>
+            </div>
+            <div class="choose-us">
+                <h2>How it works</h2>
+                <p>Join the Plasma platform to experience the best services and follow top users.</p>
+                <ol class="sec3-lists">
+                    <li>Set up your wallet</li>
+                    <li>Explore site to see notable NFTs</li>
+                    <li>Select "make a swap"</li>
+                    <li>Select NFT you will like to swap with</li>
+                    <li>Wait for approval from the user you wish to swap with</li>
+                    <li>On confirmation, NFT will be swapped</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-4">
+            <div class="center">
+            <h3>Swap Testimonials</h3>
+            <p>Get an idea of what goes down in the swap universe</p>
+            <img src="./images/Filter.png" alt="png image" />
+            </div>
+       
+
+        <div class="appraisal">
+            <div class="testify">
+            <div class="testimonials">
+                <img src="./images/ghostrider.png"/>
+                <div class="profile">
+                    <h3>Ghostrider</h3>
+                    <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                    <div class="fix">
+                        <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Maggie</h5>
+                        <p>creator</p>
+                    </div>  
+                    </div>        
+                </div>
+            </div>
+
+            <div class="network">
+                <img src="./images/Fill 1.png" />
+                <p>0xag5...pls |</p>
+                <img src="./images/Icon - ETH.png" />
+                <p>0.00 ETH |</p>
+                <p>Total NFTs = 1 |</p>
+                <img src="./images/carbon_time.png" alt="clock icon" />
+                <p>20hrs : 15min : 25sec</p>
+            </div>
+        </div>
+
+            <div class="swap-logo">
+            <img src="./images/logo.png" alt="logo" />
+            </div>
+        
+            <div class="testify">
+            <div class="testimonials">
+                <img src="./images/LOIS.png" />
+                <div class="profile">
+                    <h3>Ghostrider</h3>
+                    <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                    <div class="fix">
+                        <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Lois</h5>
+                        <p>creator</p>
+                    </div>  
+                    </div>     
+                 </div>
+            </div>
+
+            <div class="network">
+                <img src="./images/Fill 1.png" />
+                <p>0xag7...swp |</p>
+                <img src="./images/Icon - ETH.png" />
+                <p>0.00 ETH |</p>
+                <p>Total NFTs = 1 |</p>
+                <img src="./images/carbon_time.png" alt="clock icon" />
+                <p>20hrs : 15min : 25sec</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="swap-board">
+            <div class="block">
+                <p>Swap Date:</p>
+                <b>Tue Nov 15, 2022.</b> </div>
+                <div class="block" id="blocks">
+                <p>Txn Hash: </p> 
+                <b>0x2a77ac1b96215aa2gee4506110291454b4dgh4789cdfb701tg89i05745tr75ui</b>
+            </div>
+        </div>
+
+        <div class="appraisal" id="appraisal2">
+            <div class="testify">
+            <div class="testimonials">
+                <img src="./images/simpson.png" alt="simpson img"/>
+                <div class="profile">
+                    <h3>Simpson</h3>
+                    <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                    <div class="fix">
+                        <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Sandman</h5>
+                        <p>creator</p>
+                    </div>  
+                    </div>       
+                 </div>
+            </div>
+
+            <div class="network">
+                <img src="./images/Fill 1.png" />
+                <p>0xag5...pls |</p>
+                <img src="./images/Icon - ETH.png" />
+                <p>0.00 ETH |</p>
+                <p>Total NFTs = 1 |
+                </p>
+                <img src="./images/carbon_time.png" alt="clock icon" />
+                <p>20hrs : 15min : 25sec</p>
+            </div>
+            </div>
+        
+    
+            <div class="swap-logo">
+            <img src="./images/logo.png" alt="logo" />
+            </div>
+
+            <div class="testify">
+            <div class="testimonials">
+                <img src="./images/groot.png"/>
+                <div class="profile">
+                    <h3>Groot</h3>
+                    <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                    <div class="fix">
+                        <img src="./images/Ellipse.png" alt="png image" />
+                    <div class="dunne">
+                        <h5>@Dune</h5>
+                        <p>creator</p>
+                    </div>  
+                    </div>          
+                 </div>
+            </div>
+
+            <div class="network">
+                <img src="./images/Fill 1.png" /> 
+                <p>0xag7...swp |</p>
+                <img src="./images/Icon - ETH.png" /> 
+                <p>0.00 ETH |</p>
+                <p>Total NFTs = 1 |</p>
+                <img src="./images/carbon_time.png" alt="clock icon" /> 
+                <p>20hrs : 15min : 25sec</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="swap-board">
+            <div class="block">
+            <p>Swap Date:</p>
+            <b>Tue Nov 15, 2022.</b> </div>
+            <div class="block" id="blocks">
+            <p>Txn Hash: </p> 
+            <b>0x2a77ac1b96215aa2gee4506110291454b4dgh4789cdfb701tg89i05745tr75ui</b></div>
+        </div>
+
+        <div class="pages" id="pages2">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i> 
+            <span><a href="#"> Page1</a>
+            <span>2</span> <span>3</span> <span>4</span> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="channel">
+            <div class="subscribe">
+                <h3>Stay in the loop</h3>
+                <p>By subscribing to our email list, you may be the first to learn about our newest updates, features, swappable NFTs, and helpful hints for using Plasma swap.</p>
+                <input type="email" name="email" placeholder="Your email address"><button class="sub-btn">Subscribe</button>
+            </div>
+
+            <div class="community">
+                <h3>Join the Community</h3>
+                <p>By subscribing to our email list, you may be the first to learn about our newest updates, features, swappable NFTs, and helpful hints for using Plasma swap.</p>
+                <div class="social-handles">
+                    <a href="#"><img src="./images/twitter icon.png" alt="twitter icon" /></a>
+                    <a href="#"><img src="./images/IG Icon.png" alt="instagram icon" /></a>
+                    <a href="#"><img src="./images/telegram.png" alt="telegram icon" /></a>
+                    <a href="#"><img src="./images/discord.png" alt="discord icon" /></a>
+                    <a href="#"><img src="./images/slack.png" alt="slack icon" /></a>
+                    <a href="#"><img src="./images/youtube.png" alt="youtube icon" /></a>
+                </div>
+            </div>
+        </div>
+        <hr />
+            <div class="overview">
+                <div class="plasma-footer">
+                    <div class="footer-logo">
+                    <img src="./images/logo 2.png" alt="plasma logo" />
+                    </div>
+                    <p>An online digital platform for peer to peer swap of Non-Fungible Tokens (NFTs)
+                        Discover exclusive digital items and make that swap.</p>
+                </div>
+
+                <div class="know-us">
+                    <ul class="plasmas">
+                        <li class="bold-heading">Company</li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Grants</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+
+                    <ul class="plasmas">
+                        <li class="bold-heading">Marketplace</li>
+                        <li><a href="#">All NFTs</a></li>
+                        <li><a href="#">Art</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Photography</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+
+                    
+                    <ul class="plasmas">
+                        <li class="bold-heading">Initiatives</li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Newsletters</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Advocate program</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+
+                    
+                    <ul class="plasmas">
+                        <li class="bold-heading">Community</li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Favorites</a></li>
+                        <li><a href="#">Swaps</a></li>
+                        <li><a href="#">Ranking</a></li>
+                        <li><a href="#">Activity</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+
+            <p class="footer-p">2022 Plasma swap</p>
+        
+    </footer>
+
+    
+    <div class="popup">
+        <button class="close-btn" onclick="toggle()">&times;</button>
+        <img src="./images/logo 2.png" alt="plasma logo" class="popup-logo" />
+        <div class="connect">
+            <h3>Connect your wallet</h3>
+            <p>Select your most preferred wallet to continue</p>
+            <div class="connect-logo">
+            <img src="./images/metamask.png" alt="metamask logo"/>
+            <img src="./images/coinbase.png" alt="coinbase logo"/></div>
+        </div>
+    </div>
+</div> 
+<script src="script.js" type="text/javascript"></script>
+</body>
+<script src="script.js" type="text/javascript"></script>
+</html>
+
+
+<!--
+    <div class="popup-model">
+        <button class="close-btn" onclick="toggle()">&times;</button>
+        <img src="./images/logo 2.png" alt="plasma logo" class="popup-logo" />
+        <div class="con-p">
+            <h3>Connect your wallet</h3>
+            <p>Skip approving every interaction with your wallet by allowing Plasma swap remember you.</p>
+            <div class="form">
+            <input type="email" name="email" class="email" />
+            <button class="check-btn" onclick="connect()">Check Wallet</button></div>
+        <p>Signing keys can only sign messages and cannot hold funds. They are stored securely in the browser database system.</p>
+        </div>
+    </div>-->
+
+    <!--
+        .popup-model {
+    max-width: 420px;
+    width: 70%;
+    background-color:var(--card-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+    position: absolute ;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    visibility:collapse ;
+    padding: 2rem;
+  
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.email{
+    padding: 12px 90px;
+    margin: 20px;
+    border: 1px solid #DAD6FF;
+    border-radius: 8px;
+}
+.check-btn{
+    padding: 12px 8rem;
+    background-image: var(--btn-color);
+    color: var(--text-color);
+    font-size: 16px;
+    border: 1px;
+    border-image: var(--btn-color);
+    border-radius: 8px;
+}
+.con-p{
+    text-align: center;
+}
+.con-p>h3{
+    color: var(--text-color);
+    margin-top: 5px;
+    font-size: 20px;
+}
+.con-p>p{
+    font-size: 14px;
+    line-height: 1.4rem;
+    padding-top: 1rem;
+    color: var(--grey);
+    padding: 20px;
+}
+    -->

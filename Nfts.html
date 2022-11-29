@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFTs board</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/952046387d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="board">
+            <img src="./images/logo 2.png" alt="plasma logo" />
+            <ul class="board-list">
+                <li class="board-menu"><a href="dashboard.html"><img src="./images/dashboard.png" class="icons"/> dashboard</a></li>
+                <li class="board-menu"><a href="Nfts.html"><img src="./images/NFTS.png" class="icons"/> Your NFTs</a></li>
+                <li class="board-menu"><a href="#"><img src="./images/SWAPS.png" class="icons"/> swaps</a></li>
+                <li class="board-menu"><a href="#"><img src="./images/INSIGHTS.png" class="icons"/> insights</a></li>
+                <li class="board-menu"><a href="#"><img src="./images/analytics.png" class="icons"/> analytics</a></li>
+                <li class="board-menu"><a href="#"><img src="./images/Notification.png" class="icons"/> notifications</a></li>
+                <li class="board-menu"><a href="#"><img src="./images/settings.png" class="icons"/> settings</a></li>
+                <li class="board-menu"><a href="#"><img src="./images/help.png" class="icons"/> help</a></li>
+                <li class="board-menu"><a href="#"><button class="board-btn">create swap</button></a></li>
+                <li class="board-menu" id="logout"><a href="#"><img src="./images/logout.png" class="icons"/>log out</a></li>
+            </ul>
+        </div>
+
+        <div class="main-board">
+            <div class="board-nav">
+                <input type="search" name="search" placeholder="search items and accounts">
+                <div class="splash">
+                    <img src="./images/unsplash.png" class="unsplash"/>
+                    <div class="bolts">
+                    <h5>Maggie Bolts</h5>
+                    <p>0xag54...2pls</p></div>
+                </div>
+            </div>
+
+            <div class="align-swap">
+                <div class="advertise">
+                    <h2>Your NFTs</h2>
+                </div>
+                <div class="cards dash-cards">
+                    <div class="users">
+                        <img src="./images/spacecraft.png" />
+                        <h5>Spacecraft</h5>
+                        <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                        <div class="creator">
+                           <a href="#">Create swap</a>
+                        </div>
+                        <button class="users-button">Make a Swap</button>
+                    </div>
+        
+                    <div class="users">
+                        <img src="./images/Kung fu.png" alt="kungfu img" />
+                        <h5>Kungfu</h5>
+                        <p>Making every stride a lovely one while defending oneself. When you perceive a threat, you apply master Shifu’s teachings.</p>
+                        <div class="creator">
+                            <a href="#">Create swap</a>
+                        </div>
+                        <button class="users-button">Make a Swap</button>
+                    </div>
+
+                    <div class="users">
+                        <img src="./images/detached.png" alt="detached image" />
+                        <h5>Detached</h5>
+                        <p>Making every stride a lovely one while defending oneself. When you perceive a threat, you apply master Shifu’s teachings.</p>
+                        <div class="creator">
+                            <a href="#">Create swap</a>
+                        </div>
+                        <button class="users-button">Make a Swap</button>
+                    </div>
+        
+                    <div class="users">
+                        <img src="./images/groot2.png" alt="cyber img" />
+                        <h5>Groot</h5>
+                        <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                        <div class="creator">
+                            <a href="#">Create swap</a>
+                        </div>
+                        <button class="users-button">Make a Swap</button>
+                    </div>
+        
+                    <div class="users">
+                        <img src="./images/scoobydoo.png" alt="detached image" />
+                        <h5>SkoobyDoo</h5>
+                        <p>You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                        <div class="creator">
+                            <a href="#">Create swap</a>
+                        </div>
+                        <button class="users-button">Make a Swap</button>
+                    </div>
+        
+                    <div class="users">
+                        <img src="./images/bugsbunny.png" />
+                        <h5>BugsBunny</h5>
+                        <p> You are in your head, you want everyone to see how you feel, your thoughts towards things.</p>
+                        <div class="creator">
+                            <a href="#">Create swap</a> 
+                        </div>
+                        <button class="users-button">Make a Swap</button>
+                    </div>
+        
+                </div>
+                    </div> 
+                    
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="popup">
+        <button class="close-btn" onclick="toggle()">&times;</button>
+        <img src="./images/logo 2.png" alt="plasma logo" class="popup-logo" />
+        <div class="connect">
+            <h3>Spacecraft</h3>
+            <p>You have selected “space craft” to be swapped</p>
+            <button class="proceed-btn proceed2" onclick="toggle()">Proceed</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
