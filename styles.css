@@ -30,6 +30,7 @@ i{
     transition: filter 0ms ease-in-out 0ms;
     min-height: 100vh;
     width: 100%;
+    position: relative;
     
 }
 .nav-bar{
@@ -67,9 +68,14 @@ i{
     padding: 8px;
     font-size: 12px;
     border-radius: 8px;
+    cursor: pointer;
 }
 .nav-item2>button:active{
     border: 1px solid #DAD6FF;
+
+}
+.nav-item2:hover, .nav-item1:hover{
+    transform: scale(.95);
 }
 main{
     background-color: var(--bg-color1);
@@ -381,7 +387,10 @@ footer{
     font-weight: 200;
     font-size: 12px;
     
-    
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(.95);
 }
 .subscribe>input{
     padding: 8px 6rem;
@@ -475,7 +484,7 @@ hr{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.1s linear;
     position: absolute ;
     top: 80%;
     left: 50%;
@@ -483,6 +492,10 @@ hr{
     z-index: 1;
     visibility:collapse;
   
+}
+body.active-popup .container{
+    filter: blur(5px);
+    
 }
 
 .close-btn{
@@ -499,6 +512,7 @@ hr{
     margin-right: 10px;
     font-size: 15px;
     color: var(--grey);
+    transition: all 0.1s linear;
 
 }
 
@@ -534,21 +548,17 @@ hr{
 .popup-btn:active{
     border: 1px solid #080B2A;
 }
-.container-active{
-    filter:blur(5px) ;
-    transition: 0.2s ease-in-out;
+.popup-btn:hover{
+    transform: scale(.95);
 }
-.popup-active {
+
+body.active-popup .popup {
     visibility: visible;
     transition: all 0.5s ease-in-out;
-    top: 10%;
+    top: 70%;
+    opacity: 1;
     
 }
-
-/*second popup*/
-/*
-
-
 
 
 /*dashboard styling*/
@@ -561,7 +571,7 @@ hr{
 }
 .board{
     background-color: var(--nav-color);
-    padding: 2rem;
+    padding: 1rem;
     padding-left: 5rem;  
     
 }
@@ -592,6 +602,9 @@ hr{
 .board-menu>img{
     margin-right: 3rem;
 }
+.board>img{
+    margin-top: 1rem;
+}
 .board-btn {
     background-color: #DAD6FF;
     color: var(--grey);
@@ -606,15 +619,32 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 2rem;
     
 }
-.board-nav>input {
-    padding: 8px 10rem;
-    background-image: linear-gradient(162.34deg, #161A42 22.61%, rgba(22, 26, 66, 0) 118.29%), linear-gradient(0deg, #212554, #212554);
-    border: none;
-    border-radius: 5px;
+.search-bar>input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    background: transparent;
     
+}
+.search-bar{
+    width: 60%;
+    background-image:linear-gradient(162.34deg, #161A42 22.61%, rgba(22, 26, 66, 0) 118.29%),
+    linear-gradient(0deg, #212554, #212554);
+    ;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding:5px 20px;
+}
+.search-bar>button{
+    background: transparent;
+    border: none;
+    height: 20px;
+    margin-right: 2rem;
 }
 
 
@@ -634,43 +664,60 @@ hr{
 }
 .align-swap{
     background-color: var(--bg-color1);
-    width: 100%;
-    
+    padding: 1rem;
     
 }
+
 .design-swap{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 2rem;
     
 }
-.select-swap{
-    background-image:linear-gradient(180deg, rgba(190, 186, 227, 0.5) 0%, rgba(82, 67, 252, 0.5) 100%);
-    
+.select-swap>h3, .make-swap>h3, .completed-swap>h3{
+    padding-left: 10px;
+     
 }
-.select-swap{
-    background-image:linear-gradient(180deg, rgba(190, 186, 227, 0.5) 0%, rgba(82, 67, 252, 0.5) 100%);
-    border: none;
-    color: white;
+.select-swap, .make-swap, .completed-swap{
+    padding: 0px;
+    margin: 0px;
+    width: 250px;
+    height: 70px;
     text-align: left;
+    border: none;
+    border-radius: 10px;
+    color: var(--text-color);
+    cursor: pointer;
 
+}
+.select-swap{
+    background-image:linear-gradient(180deg, rgba(190, 186, 227, 0.5) 0%, rgba(82, 67, 252, 0.5) 100%);
+    margin-right: 10px;
+
+}
+.select-swap:hover{
+    transform: scale(.95);
 }
 
 .make-swap{
     background-image:linear-gradient(180deg, rgba(190, 186, 227, 0.5) 0%, rgba(252, 38, 153, 0.5) 100%);
-    margin-right: 2rem;
-    border: none;
+    margin-right: 10px;
+}
+.make-swap:hover{
+    transform: scale(.95);
 }
 .completed-swap{
     background-image:linear-gradient(180deg, rgba(190, 186, 227, 0.5) 0%, rgba(43, 194, 201, 0.5) 100%);
-    border: none;
+    
+}
+.completed-swap{
+    transform: scale(.95);
 }
 .advertise{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 4rem;
+    padding: 3rem;
     padding-bottom: 0rem;
 }
 .advertise>h2{
@@ -678,6 +725,11 @@ hr{
 }
 .dash-cards{
     padding-top: 1rem;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 0rem;
+    margin-left: 0rem;
+    
 }
 .advertise>a{
     color: var(--grey);
@@ -685,6 +737,10 @@ hr{
 }
 .board-menu:active{
     background-color: #1C2044;
+    
+}
+.board-menu:hover{
+    transform: scale(.95);
 }
 
 /*design for swap board*/
