@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/952046387d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="container">
     <header>
         <nav>
@@ -19,8 +20,8 @@
 
                 <div class="nav-menu">
                     <ul class="nav-list">
-                        <li class="nav-item1"><a href="#">How it works</a></li>
-                        <li class="nav-item2" ><button>Connect Wallet</button></li>
+                        <li class="nav-item1"><a href="#three">How it works</a></li>
+                        <li class="nav-item2"><button>Connect Wallet</button></li>
                     </ul>
                 </div>
             </div>
@@ -192,7 +193,7 @@
     </section>
 
     <section>
-        <div class="section-3">
+        <div class="section-3" id="three">
             <div class="frame-2">
                 <img src="./images/Frame 3.png" alt="png image" class="frame-2"/>
             </div>
@@ -457,8 +458,9 @@
         <h3>Connect your wallet</h3>
         <p>Select your most preferred wallet to continue</p>
         <div class="connect-logo">
-        <img src="./images/metamask.png" alt="metamask logo"/>
-        <img src="./images/coinbase.png" alt="coinbase logo"/></div>
+        <button class="connect-button" onclick="connect()"><img src="./images/metamask.png" alt="metamask logo"/></button>
+        <button class="connect-button" onclick="connect()"><img src="./images/coinbase.png" alt="coinbase logo"/></button>
+        </div>
     </div>
 </div>
 

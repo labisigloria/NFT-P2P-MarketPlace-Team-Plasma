@@ -536,9 +536,8 @@ body.active-popup .container{
     align-items: center;
     margin: 30px 50px;
 }
-.connect-logo>img{
-    width: 70px;
-    padding-bottom: 3rem;
+.connect-button{
+    margin-bottom: 4rem;
 }
 
 .popup-btn{
