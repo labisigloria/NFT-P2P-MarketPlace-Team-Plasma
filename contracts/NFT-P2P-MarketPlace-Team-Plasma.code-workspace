@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../../Downloads/NFT-P2P-MarketPlace-Team-Plasma/NFT-P2P-MarketPlace-Team-Plasma"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "NFT-P2P-MarketPlace-Team-Plasma"
+	}
+}
