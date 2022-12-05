@@ -1,4 +1,5 @@
-require("dotenv").config();
+require("dotenv").config()
+
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -17,7 +18,7 @@ export default function Home() {
 	async function loadNFTs() {
 		/* create a generic provider and query for unsold market items */
 		const provider = new ethers.providers.JsonRpcProvider(
-			process.env.REACT_APP_ALCHEMY_API_URL,
+			process.env.REACT_APP_ALCHEMY_API_URL
 		);
 		const contract = new ethers.Contract(
 			marketplaceAddress,
