@@ -12,3 +12,4 @@ npx hardhat node
 npx hardhat run scripts/deploy.js --network goerli
 ```
 nftMarketplace deployed to: 0x74b7f699373941721Ce695B9c52Fa8151316eC62
+npm run dev (to see project)
