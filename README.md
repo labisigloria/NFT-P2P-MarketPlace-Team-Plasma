@@ -12,7 +12,7 @@ Plasma Swap is a new platform that helps you exchange and swap NFTs with ease wi
 - Adekoya Olabisi (Web2)
 - Olanike Ogundiran (Web3) 
 - Umoh Mercy (Web3)
-- Margaret Okpani (UI/UX)
+- Magaret Okpani (UI/UX)
 - Lois Daishe (UI/UX)
 - Chiamaka Obioha (PM)
 
@@ -20,9 +20,6 @@ Plasma Swap is a new platform that helps you exchange and swap NFTs with ease wi
 ## Documentation
 [PRD]
 (https://docs.google.com/document/d/1NIPeTMauZYxGsj4jrLIm4P1oa_D993Hwq3r-jObN73s/edit)
-
-[DESIGN]
-(https://www.figma.com/file/NVoaOkdZnQvNxhGib4aORH/Team-Plasma?node-id=36%3A2&t=IRzAvYEpNwgyGDQH-1)
 
 ## Environmental Variables
 
