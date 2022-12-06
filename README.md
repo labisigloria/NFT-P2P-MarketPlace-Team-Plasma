@@ -10,12 +10,12 @@ Plasma Swap is a new platform that helps you exchange and swap NFTs with ease wi
 
 ## Authors
 - Adekoya Olabisi (Web2)
-- Olanike Ogundiran (Web3)
+- Olanike Ogundiran (Web3) 
 - Umoh Mercy (Web3)
 - Magaret Okpani (UI/UX)
 - Lois Daishe (UI/UX)
 - Chiamaka Obioha (PM)
-- Divine Favour Tariye (PM)
+
 
 ## Documentation
 [PRD]
