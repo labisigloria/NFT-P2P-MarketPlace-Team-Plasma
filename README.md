@@ -21,7 +21,7 @@ Plasma Swap is a new platform that helps you exchange and swap NFTs with ease wi
 [PRD]
 (https://docs.google.com/document/d/1NIPeTMauZYxGsj4jrLIm4P1oa_D993Hwq3r-jObN73s/edit)
 
-[Design]
+[DESIGN]
 (https://www.figma.com/file/NVoaOkdZnQvNxhGib4aORH/Team-Plasma?node-id=36%3A2&t=IRzAvYEpNwgyGDQH-1)
 
 ## Environmental Variables
