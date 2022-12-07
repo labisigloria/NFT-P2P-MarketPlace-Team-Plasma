@@ -10,9 +10,6 @@ function Header() {
     provider.send("eth_requestAccounts", []);
   };
 
-  const logout = () => {
-    console.log("fired logout");
-  };
 
   return (
     <header>
