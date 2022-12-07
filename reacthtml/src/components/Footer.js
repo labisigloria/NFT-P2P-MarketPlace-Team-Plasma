@@ -1,4 +1,10 @@
 import React from "react";
+import twitter from "../images/twitter icon.png"
+import instagram from "../images/IG Icon.png"
+import telegram from "../images/telegram.png"
+import discord from "../images/discord.png"
+import slack from "../images/slack.png"
+import youtube from "../images/youtube.png"
 
 class Footer extends React.Component {
     render() {
@@ -15,12 +21,12 @@ class Footer extends React.Component {
                     <h3>Join the Community</h3>
                     <p>By subscribing to our email list, you may be the first to learn about our newest updates, features, swappable NFTs, and helpful hints for using Plasma swap.</p>
                     <div class="social-handles">
-                        <a href="twitter"><img src="./images/twitter icon.png" alt="twitter icon" /></a>
-                        <a href="IG"><img src="./images/IG Icon.png" alt="instagram icon" /></a>
-                        <a href="telegram"><img src="./images/telegram.png" alt="telegram icon" /></a>
-                        <a href="discord"><img src="./images/discord.png" alt="discord icon" /></a>
-                        <a href="slack"><img src="./images/slack.png" alt="slack icon" /></a>
-                        <a href="youtube"><img src="./images/youtube.png" alt="youtube icon" /></a>
+                        <a href="twitter"><img src= {twitter} alt="twitter icon" /></a>
+                        <a href="IG"><img src= {instagram} alt="instagram icon" /></a>
+                        <a href="telegram"><img src= {telegram} alt="telegram icon" /></a>
+                        <a href="discord"><img src= {discord} alt="discord icon" /></a>
+                        <a href="slack"><img src= {slack} alt="slack icon" /></a>
+                        <a href="youtube"><img src= {youtube} alt="youtube icon" /></a>
                     </div>
                 </div>
             </div>

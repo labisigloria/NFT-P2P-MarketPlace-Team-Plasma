@@ -1,5 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import vector31 from "../images/Vector 31.svg"
+import frame2 from "../images/Frame 2.png"
+import filter from "../images/Filter.png"
+import splitopen from "../images/splitopen.png"
+import ellipse from "../images/Ellipse.png" 
+import kungfu from "../images/Kung fu.png"
+import spaceimpact from "../images/spaceimpact.png"
+import cyber from "../images/cyber.png"
+import detached from "../images/detached.png"
+import spacecraft from "../images/spacecraft.png"
+import sipping from "../images/sipping.png"
+import astronaut from "../images/astronaut.png"
+import frame3 from "../images/Frame 3.png"
+import ghostrider from "../images/ghostrider.png" 
+import fill from "../images/Fill 1.png"
+import ETH from "../images/Icon - ETH.png"
+import carbon from "../images/carbon_time.png"
+import logo from "../images/logo.png"
+import lois from "../images/LOIS.png"
+import simpson from "../images/simpson.png"
+import groot from "../images/groot.png"
+
+
+
+
 class Home extends React.Component {
   render() {
     return (
@@ -16,7 +41,7 @@ class Home extends React.Component {
             </h1>
           </div>
           <div class="start">
-            <img src="./images/Vector 31.svg" alt="" />
+            <img src= {vector31} alt="" />
             <p>
               Utilize our digital platform to quickly and easily swap your NFTs
               without the use of a central third party.
@@ -32,7 +57,7 @@ class Home extends React.Component {
         </main>
         <section>
           <div class="section-1">
-            <img src="./images/Frame 2.png" alt="background" class="frame-2" />
+            <img src= {frame2} alt="background" class="frame-2" />
             <div class="choose-us">
               <h2>why choose us?</h2>
               <p>
@@ -54,12 +79,12 @@ class Home extends React.Component {
             <div class="center">
               <h3>Explore NFTs Available for Swap</h3>
               <p>The best site to swap your NFTs</p>
-              <img src="./images/Filter.png" alt="" />
+              <img src= {filter} alt="" />
             </div>
 
             <div class="cards">
               <div class="users">
-                <img src="./images/splitopen.png" alt="splitopen img" />
+                <img src= {splitopen} alt="splitopen img" />
                 <h5>Splitopen</h5>
                 <p>
                   {" "}
@@ -67,7 +92,7 @@ class Home extends React.Component {
                   your thoughts towards things.
                 </p>
                 <div class="creator" id="creator1">
-                  <img src="./images/Ellipse.png" alt="ellipse nft" />
+                  <img src= {ellipse} alt="ellipse nft" />
                   <div class="dunne">
                     <h5>@Dune</h5>
                     <p>creator</p>
@@ -78,14 +103,14 @@ class Home extends React.Component {
               </div>
 
               <div class="users">
-                <img src="./images/Kung fu.png" alt="kungfu img" />
+                <img src= {kungfu} alt="kungfu img" />
                 <h5>Kungfu</h5>
                 <p>
                   Making every stride a lovely one while defending oneself. When
                   you perceive a threat, you apply master Shifu’s teachings.
                 </p>
                 <div class="creator">
-                  <img src="./images/Ellipse.png" alt="ellipse nft" />
+                  <img src= {ellipse} alt="ellipse nft" />
                   <div class="dunne">
                     <h5>@Maggie</h5>
                     <p>creator</p>
@@ -96,14 +121,14 @@ class Home extends React.Component {
               </div>
 
               <div class="users">
-                <img src="./images/spaceimpact.png" alt="" />
+                <img src= {spaceimpact} alt="" />
                 <h5>Spaceimpact</h5>
                 <p>
                   The universe is wide, encounter space within the metaverse.
                   Take a deep dive into what exists in the alternate universe.
                 </p>
                 <div class="creator">
-                  <img src="./images/Ellipse.png" alt="ellipse nft" />
+                  <img src= {ellipse} alt="ellipse nft" />
                   <div class="dunne">
                     <h5>@Lois</h5>
                     <p>creator</p>
@@ -114,14 +139,14 @@ class Home extends React.Component {
               </div>
 
               <div class="users">
-                <img src="./images/cyber.png" alt="cyber img" />
+                <img src= {cyber} alt="cyber img" />
                 <h5>Cyberfunk</h5>
                 <p>
                   Open your mind to the future, see what the sounds produced
                   does to you. Learn your taste and adapt to the pace.
                 </p>
                 <div class="creator">
-                  <img src="./images/Ellipse.png" alt="ellipse nft" />
+                  <img src= {ellipse} alt="ellipse nft" />
                   <div class="dunne">
                     <h5>@Sandman</h5>
                     <p>creator</p>
@@ -132,14 +157,14 @@ class Home extends React.Component {
               </div>
 
               <div class="users">
-                <img src="./images/detached.png" alt="nft" />
+                <img src= {detached} alt="nft" />
                 <h5>Detached</h5>
                 <p>
                   Making every stride a lovely one while defending oneself. When
                   you perceive a threat, you apply master Shifu’s teachings.
                 </p>
                 <div class="creator">
-                  <img src="./images/Ellipse.png" alt="ellipse face" />
+                  <img src= {ellipse} alt="ellipse face" />
                   <div class="dunne">
                     <h5>@Morty</h5>
                     <p>creator</p>
@@ -150,14 +175,14 @@ class Home extends React.Component {
               </div>
 
               <div class="users">
-                <img src="./images/spacecraft.png" alt="nft" />
+              <img src= {spacecraft} alt="nft" />
                 <h5>Spacecraft</h5>
                 <p>
                   You are in your head, you want everyone to see how you feel,
                   your thoughts towards things.
                 </p>
                 <div class="creator" id="creator6">
-                  <img src="./images/Ellipse.png" alt="ellipse face" />
+                  <img src= {ellipse} alt="ellipse face" />
                   <div class="dunne">
                     <h5>@Rick</h5>
                     <p>creator</p>
@@ -168,7 +193,7 @@ class Home extends React.Component {
               </div>
 
               <div class="users">
-                <img src="./images/sipping.png" alt="nft" />
+                <img src= {sipping} alt="nft" />
                 <h5>Sipping</h5>
                 <p>
                   {" "}
@@ -176,7 +201,7 @@ class Home extends React.Component {
                   Take a deep dive into what exists in the alternate universe.
                 </p>
                 <div class="creator">
-                  <img src="./images/Ellipse.png" alt="ellipse face" />
+                  <img src= {ellipse} alt="ellipse face" />
                   <div class="dunne">
                     <h5>@Mage</h5>
                     <p>creator</p>
@@ -187,7 +212,7 @@ class Home extends React.Component {
               </div>
 
               <div class="users">
-                <img src="./images/astronaut.png" alt="nft" />
+                <img src= {astronaut} alt="nft" />
                 <h5>Astronaut</h5>
                 <p>
                   {" "}
@@ -195,7 +220,7 @@ class Home extends React.Component {
                   your thoughts towards things.
                 </p>
                 <div class="creator" id="creator8">
-                  <img src="./images/Ellipse.png" alt="ellipse face" />
+                  <img src= {ellipse} alt="ellipse face" />
                   <div class="dunne">
                     <h5>@Bigfoot</h5>
                     <p>creator</p>
@@ -219,7 +244,7 @@ class Home extends React.Component {
           <div class="section-3" id="three">
             <div class="frame-2">
               <img
-                src="./images/Frame 3.png"
+                src= {frame3}
                 alt="background"
                 class="frame-2"
               />
@@ -246,13 +271,13 @@ class Home extends React.Component {
             <div class="center">
               <h3>Swap Testimonials</h3>
               <p>Get an idea of what goes down in the swap universe</p>
-              <img src="./images/Filter.png" alt="nft" />
+              <img src= {filter} alt="nft" />
             </div>
 
             <div class="appraisal">
               <div class="testify">
                 <div class="testimonials">
-                  <img src="./images/ghostrider.png" alt="nft" />
+                  <img src= {ghostrider} alt="nft" />
                   <div class="profile">
                     <h3>Ghostrider</h3>
                     <p>
@@ -260,7 +285,7 @@ class Home extends React.Component {
                       feel, your thoughts towards things.
                     </p>
                     <div class="fix">
-                      <img src="./images/Ellipse.png" alt="ellipse" />
+                      <img src= {ellipse} alt="ellipse" />
                       <div class="dunne">
                         <h5>@Maggie</h5>
                         <p>creator</p>
@@ -270,23 +295,23 @@ class Home extends React.Component {
                 </div>
 
                 <div class="network">
-                  <img src="./images/Fill 1.png" alt="icon" />
+                  <img src= {fill} alt="icon" />
                   <p>0xag5...pls |</p>
-                  <img src="./images/Icon - ETH.png" alt="icon" />
+                  <img src= {ETH} alt="icon" />
                   <p>0.00 ETH |</p>
                   <p>Total NFTs = 1 |</p>
-                  <img src="./images/carbon_time.png" alt="clock icon" />
+                  <img src= {carbon} alt="clock icon" />
                   <p>20hrs : 15min : 25sec</p>
                 </div>
               </div>
 
               <div class="swap-logo">
-                <img src="./images/logo.png" alt="logo" />
+                <img src= {logo} alt="logo" />
               </div>
 
               <div class="testify">
                 <div class="testimonials">
-                  <img src="./images/LOIS.png" alt="lois" />
+                  <img src= {lois} alt="lois" />
                   <div class="profile">
                     <h3>Ghostrider</h3>
                     <p>
@@ -294,7 +319,7 @@ class Home extends React.Component {
                       feel, your thoughts towards things.
                     </p>
                     <div class="fix">
-                      <img src="./images/Ellipse.png" alt="ellipse" />
+                      <img src= {ellipse} alt="ellipse" />
                       <div class="dunne">
                         <h5>@Lois</h5>
                         <p>creator</p>
@@ -304,12 +329,12 @@ class Home extends React.Component {
                 </div>
 
                 <div class="network">
-                  <img src="./images/Fill 1.png" alt="icon" />
+                  <img src= {fill} alt="icon" />
                   <p>0xag7...swp |</p>
-                  <img src="./images/Icon - ETH.png" alt="icon" />
+                  <img src= {ETH} alt="icon" />
                   <p>0.00 ETH |</p>
                   <p>Total NFTs = 1 |</p>
-                  <img src="./images/carbon_time.png" alt="clock icon" />
+                  <img src= {carbon} alt="clock icon" />
                   <p>20hrs : 15min : 25sec</p>
                 </div>
               </div>
@@ -332,7 +357,7 @@ class Home extends React.Component {
             <div class="appraisal" id="appraisal2">
               <div class="testify">
                 <div class="testimonials">
-                  <img src="./images/simpson.png" alt="simpson img" />
+                  <img src= {simpson} alt="simpson img" />
                   <div class="profile">
                     <h3>Simpson</h3>
                     <p>
@@ -340,7 +365,7 @@ class Home extends React.Component {
                       feel, your thoughts towards things.
                     </p>
                     <div class="fix">
-                      <img src="./images/Ellipse.png" alt="ellipse" />
+                      <img src= {ellipse} alt="ellipse" />
                       <div class="dunne">
                         <h5>@Sandman</h5>
                         <p>creator</p>
@@ -350,23 +375,23 @@ class Home extends React.Component {
                 </div>
 
                 <div class="network">
-                  <img src="./images/Fill 1.png" alt="icon" />
+                  <img src= {fill} alt="icon" />
                   <p>0xag5...pls |</p>
-                  <img src="./images/Icon - ETH.png" alt="icon" />
+                  <img src= {ETH} alt="icon" />
                   <p>0.00 ETH |</p>
                   <p>Total NFTs = 1 |</p>
-                  <img src="./images/carbon_time.png" alt="clock icon" />
+                  <img src= {carbon} alt="clock icon" />
                   <p>20hrs : 15min : 25sec</p>
                 </div>
               </div>
 
               <div class="swap-logo">
-                <img src="./images/logo.png" alt="logo" />
+                <img src= {logo} alt="logo" />
               </div>
 
               <div class="testify">
                 <div class="testimonials">
-                  <img src="./images/groot.png" alt="groot" />
+                  <img src= {groot} alt="groot" />
                   <div class="profile">
                     <h3>Groot</h3>
                     <p>
@@ -374,7 +399,7 @@ class Home extends React.Component {
                       feel, your thoughts towards things.
                     </p>
                     <div class="fix">
-                      <img src="./images/Ellipse.png" alt="ellipse" />
+                      <img src= {ellipse} alt="ellipse" />
                       <div class="dunne">
                         <h5>@Dune</h5>
                         <p>creator</p>
@@ -384,12 +409,12 @@ class Home extends React.Component {
                 </div>
 
                 <div class="network">
-                  <img src="./images/Fill 1.png" alt="icon" />
+                  <img src= {fill} alt="icon" />
                   <p>0xag7...swp |</p>
-                  <img src="./images/Icon - ETH.png" alt="icon" />
+                  <img src= {ETH} alt="icon" />
                   <p>0.00 ETH |</p>
                   <p>Total NFTs = 1 |</p>
-                  <img src="./images/carbon_time.png" alt="clock icon" />
+                  <img src= {carbon} alt="clock icon" />
                   <p>20hrs : 15min : 25sec</p>
                 </div>
               </div>

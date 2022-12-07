@@ -27,9 +27,9 @@ function App() {
           path="/dashboard"
           element={
             <>
-              <Header />
+              
               <Dashboard />
-              <Footer />
+              
             </>
           }
         />
@@ -37,7 +37,6 @@ function App() {
           path="/Swap"
           element={
             <>
-              <Header />
               <Swap />
               <Footer />
             </>
@@ -47,7 +46,6 @@ function App() {
           path="/Nfts"
           element={
             <>
-              <Header />
               <Nfts />
               <Footer />
             </>
