@@ -1,4 +1,5 @@
 node_modules
+<<<<<<< HEAD
 
 node_modules
 .env
@@ -35,3 +36,5 @@ typechain-types
 cache
 artifacts
 
+=======
+>>>>>>> e34efaee9c06f990ae01a23f5fbd69c3393e3153

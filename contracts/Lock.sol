@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.4;
 
@@ -32,3 +33,7 @@ contract Lock {
         owner.transfer(address(this).balance);
     }
 }
+=======
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+>>>>>>> e34efaee9c06f990ae01a23f5fbd69c3393e3153

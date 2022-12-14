@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 contract NFTMarketplace is ERC721URIStorage {
 
     using Counters for Counters.Counter;
-    //_tokenIds variable has the most recent minted tokenId
+    
     Counters.Counter private _tokenIds;
     //Keeps track of the number of items sold on the marketplace
     Counters.Counter private _itemsSold;
