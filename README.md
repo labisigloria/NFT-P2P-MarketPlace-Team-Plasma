@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
-=======
 # PLASMA-SWAP
 
 Plasma Swap is a new platform that helps you exchange and swap NFTs with ease without the transfer of funds.The platform is integrated with an innovative contract protocol that initiates and verifies these transactions to avoid a third party.
@@ -57,4 +42,3 @@ To deploy this project run
 
 **Client:** Html, Css, js
 **Server:** Node, js
->>>>>>> e34efaee9c06f990ae01a23f5fbd69c3393e3153
